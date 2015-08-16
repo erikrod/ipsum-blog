@@ -1,10 +1,21 @@
+@font-face{
+    font-family:"Chalet";
+    font-style:normal;
+    font-weight:normal;
+    src: url(../fonts/Chalet.eot);
+    src: url(../fonts/Chalet.eot?#iefix) format("embedded-opentype"),
+         url(../fonts/Chalet.woff) format("woff"),
+         url(../fonts/Chalet.ttf) format("true-type"),
+         url(../fonts/Chalet.svg#Chalet) format("svg");
+}
+
 body{
 	text-align: justify;
 }
 
 h1 a{
 	color: #FCA205;
-	font-family: 'Lobster';
+	font-family: 'Chalet';
 }
 
 .page-header {
