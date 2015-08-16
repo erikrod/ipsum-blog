@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="page-header col-md-12 col-xs-12">
@@ -26,6 +25,21 @@
 			<div class="col-md-10 col-xs-10 post">
 				{% block content %}
 				{% endblock %}
+			</div>
+			<div class="col-md-2 col-xs-2 generators hidden-xs">
+				<h4>Ipsum Generators</h4>
+				<div class="row">
+					<h5>Samuel L. Jackson</h5>
+					<a href="http://slipsum.com/" target="_blank"><img src="{% static 'img/Samuel_L._Jackson_Pulp_fiction_2.png' %}" class="img-responsive center-block"></a>
+				</div>
+				<div class="row">
+					<h5>Bacon</h5>
+					<a href="http://baconipsum.com/" target="_blank"><img src="{% static 'img/bacon.png' %}" class="img-responsive center-block"></a>
+				</div>
+				<div class="row">
+					<h5>Hodor</h5>
+					<a href="http://hodoripsum.com/" target="_blank"><img src="{% static 'img/hodor.png' %}" class="img-responsive center-block"></a>
+				</div>
 			</div>
 		</div>
 	</div>
