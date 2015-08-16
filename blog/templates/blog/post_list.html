@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Ipsum Blog</title>
-</head>
-<body>
-	<div>
-		<h1><a href="/">Ipsum Blog</a></h1>
-	</div>
-
+{% extends "blog/base.html" %}
+{% block content %}
 	{% for post in posts %}
-		<div>
-			<p>published: {{ post.published_date }}</p>
-			<h1><a href="">{{ post.title }}</a></h1>
-			<p>{{ post.text|linebreaks }}</post></p>
-		</div>
+		<h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+		<p>{{ post.text|linebreaks }}</post></p>
+		<div class="date">
+	 		<p>published: {{ post.published_date }}</p>
+	 	</div>
 	{% endfor %}
-</body>
-</html>
+{% endblock content %}
