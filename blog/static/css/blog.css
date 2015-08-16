@@ -9,6 +9,10 @@
          url(../fonts/Chalet.svg#Chalet) format("svg");
 }
 
+a span{
+    color: rgb(102, 51, 153);
+}
+
 body{
 	text-align: justify;
     font-family: 'Chalet';
